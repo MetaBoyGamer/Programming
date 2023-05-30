@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bckg"
+    android:foregroundTint="#531EB3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Wybierz ilość pól"
+                android:textColor="@color/textcolor"
+                android:textSize="38sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Ilosc_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:width="200px"
+                android:height="155px"
+                android:background="@color/buttonbg"
+                android:onClick="num_5"
+                android:text="5"
+                android:textColor="@color/buttoncolor"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/Ilosc_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:width="200px"
+                android:height="155px"
+                android:background="@color/buttonbg"
+                android:onClick="num_7"
+                android:text="7"
+                android:textColor="@color/buttoncolor"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/Ilosc_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:width="200px"
+                android:height="155px"
+                android:background="@color/buttonbg"
+                android:onClick="num_10"
+                android:text="10"
+                android:textColor="@color/buttoncolor"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Ilosc_min"
+            android:layout_width="313dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:foregroundTint="#673AB7"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Liczba min:"
+            android:textAlignment="gravity"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/cardview_compat_inset_shadow"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:width="180px"
+                android:height="155px"
+                android:background="@color/buttonbg"
+                android:onClick="Select"
+                android:text="Wybierz"
+                android:textColor="@color/buttoncolor"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:layout_weight="1"
+                android:background="@color/buttoncolor"
+                android:foregroundTint="#673AB7"
+                android:gravity="bottom|center_horizontal"
+                android:shadowColor="#CDB0B0"
+                android:text="Autor: Kacper Podsiadło 3P"
+                android:textColor="@color/textcolor"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFEB3B"
+                android:textColorLink="#C6B5B5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
